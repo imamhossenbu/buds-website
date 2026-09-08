@@ -22,11 +22,11 @@ export default function Error({
   return (
     <main className="min-h-screen flex flex-col bg-bg">
       <Navbar />
-      
+
       <div className="flex-1 flex items-center justify-center pt-32 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         {/* Abstract Background Elements */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl aspect-square bg-accent-100 rounded-full blur-[120px] opacity-40 pointer-events-none" />
-        
+
         <div className="relative z-10 w-full max-w-2xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -34,11 +34,11 @@ export default function Error({
             transition={{ duration: 0.5 }}
             className="mb-8"
           >
-            <div className="w-24 h-24 bg-danger-bg text-danger mx-auto rounded-full flex items-center justify-center mb-6 shadow-sm border border-danger/20">
+            <div className="w-24 h-24 bg-danger-bg text-danger mx-auto rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-danger/20">
               <span className="text-5xl font-bold font-display">!</span>
             </div>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -47,11 +47,11 @@ export default function Error({
             <h2 className="text-3xl md:text-4xl font-display font-bold text-text-primary mb-4">
               Objection! Something went wrong.
             </h2>
-            <p className="text-lg text-text-secondary mb-10 max-w-xl mx-auto leading-relaxed">
-              We encountered an unexpected error while processing your request. 
+            <p className="text-lg text-text-secondary mb-10 max-w-2xl mx-auto leading-relaxed">
+              We encountered an unexpected error while processing your request.
               Please try refreshing or return to the main stage.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
                 onClick={() => reset()}
@@ -71,7 +71,7 @@ export default function Error({
           </motion.div>
         </div>
       </div>
-      
+
       <Footer />
     </main>
   );
