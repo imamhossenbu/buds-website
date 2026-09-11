@@ -7,6 +7,9 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { RefreshCcw, Home } from "lucide-react";
 
+
+
+// error page.....for showing errors that happens in the app.
 export default function Error({
   error,
   reset,
@@ -49,7 +52,8 @@ export default function Error({
             </h2>
             <p className="text-lg text-text-secondary mb-10 max-w-2xl mx-auto leading-relaxed">
               We encountered an unexpected error while processing your request.
-              Please try refreshing or return to the main stage.
+              Please try refreshing
+              or return to the main stage.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
